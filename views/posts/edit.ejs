@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-color:#D18700 ;">
+    <div class="container-fluid">
+        <div style="background-color: chartreuse; border: 2px dotted black; border-radius: 10px; height:40px;">
+            <a href="/" class="ml-2" style="margin-left: 40px;" >Back to Index</a>
+           </div>
+           <div class="container-fluid p-5 " style="background-color:#FFB52E; border: 2px dotted black; border-radius: 10px; font-size: medium;">
+        <form action="/posts/<%= post.id %>?_method=PUT" method="POST">
+            <%- include('_form_fields') %>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
